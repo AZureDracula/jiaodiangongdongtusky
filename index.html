@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>焦点滚动图</title>
+		<style>
+			body {
+				width: 100%;
+				margin: 0px;
+			}
+			
+			div {
+				width: 100%;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			
+			.wrap {
+				width: 600px;
+				height: 400px;
+				margin: 100px auto;
+				border: 1px solid #000000;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			#pic {
+				width: 4200px;
+				position: absolute;
+			}
+			
+			#pic li {
+				float: left;
+				height: 400px;
+			}
+			
+			#list {
+				position: absolute;
+				bottom: 10px;
+				left: 150px;
+			}
+			
+			#list li {
+				float: left;
+				width: 15px;
+				height: 15px;
+				background: #fff;
+				margin: 0 18px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			
+			#list .on {
+				background: #e27a00;
+			}
+			
+			.Prev {
+				top: 150px;
+				left: 0;
+			}
+			
+			.Next {
+				top: 150px;
+				right: 0;
+			}
+			
+			.Prev,
+			.Next {
+				position: absolute;
+				font-size: 80px;
+				font-weight: bold;
+				color: #fff;
+				-webkit-transition: all 0.35s ease-in-out
+			}
+			
+			.Next:hover,
+			.Prev:hover {
+				background: #ccc;
+				background: rgba(204, 204, 204, 0.4);
+			}
+		</style>
+		<!--
+           	作者：赵双龙  【AZureDracula逆天月尨】
+           	邮箱：1747004181@qq.com
+           	时间：2018-10-13
+     	  	描述：逆浪开帆难
+     	  		   天兵曜神武   
+     	  		   月落锦屏虚   
+     	  		   尨麟漾嶰谷      -->
+		<script type="text/javascript" src="js/menu.js"></script>
+
+
+	</head>
+
+	<body bgcolor="azure">
+		<div>
+
+			<div class="wrap" id="wrap">
+				<ul id="pic" style="left: -600px;">
+					<li>
+						<img src="img/5.jpg" width="600px" height="400px" alt="5" />
+					</li>
+					<li>
+						<img src="img/1.jpg" width="600px" height="400px" alt="1" />
+					</li>
+					<li>
+						<img src="img/2.jpg" width="600px" height="400px" alt="2" />
+					</li>
+					<li>
+						<img src="img/3.jpg" width="600px" height="400px" alt="3" />
+					</li>
+					<li>
+						<img src="img/4.jpg" width="600px" height="400px" alt="4" />
+					</li>
+					<li>
+						<img src="img/5.jpg" width="600px" height="400px" alt="5" />
+					</li>
+					<li>
+						<img src="img/1.jpg" width="600px" height="400px" alt="2" />
+					</li>
+				</ul>
+				<ul id="list">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<a href="javascript:;" class="Prev" id="Prev">
+					<</a>
+						<a href="javascript:;" class="Next" id="Next">></a>
+			</div>
+
+			<!--
+        	作者：1747004181@qq.com
+        	时间：2018-10-13
+        	描述：上面是研究不透的js部分
+        -->
+
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+		</div>
+	</body>
+
+</html>
